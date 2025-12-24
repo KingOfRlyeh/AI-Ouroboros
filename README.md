@@ -16,7 +16,7 @@ Let:
 
 AI systems are retrained periodically on a mixture of human and AI outputs, creating a **closed feedback loop**.
 
----
+
 ## Human Content Model
 
 Human production is modeled as exponentially growing content with a fixed lexical distribution:
@@ -31,7 +31,7 @@ q_i = \frac{1}{i^\alpha} \Big/ \sum_{k=1}^{I} \frac{1}{k^\alpha}
 
 This distribution remains *structurally stable* over time.
 
----
+
 ## AI Content Model
 
 Each AI model \( j \) produces content according to:
@@ -46,7 +46,7 @@ Total AI content:
 G(t) = G_0 + \sum_{s=1}^{t} \sum_{j=1}^{J} g_j(s)
 \]
 
----
+
 
 ## Internet Mixture Distribution
 
@@ -64,7 +64,7 @@ H(t) + G(t)
 
 This distribution represents what future models observe when retraining.
 
----
+
 
 ## Retraining Rule
 
@@ -85,7 +85,7 @@ Sampling is then constrained via **top-p (nucleus) sampling**:
 \sum_{i \in \mathcal{A}} M_{ij}(t) \ge p
 \]
 
----
+
 
 ## Memory Retention
 
@@ -98,7 +98,7 @@ p_{ij}(t) =
 
 where \( \mu \) is the memory fraction.
 
----
+
 
 ## Metrics
 
@@ -124,7 +124,7 @@ Measured separately for:
 - Human-origin tokens
 - Long-tail tokens (lowest \( 20\% \) of \( q_i \))
 
----
+
 
 ## Simulation Scenarios
 
@@ -142,7 +142,7 @@ Four regimes are explored:
 4. **High Feedback Stress**  
    Low \( F_j \), aggressive retraining, weak memory
 
----
+
 
 ## Key Observations
 
@@ -151,7 +151,7 @@ Four regimes are explored:
 - Memory introduces hysteresis that delays collapse
 - Human filtering acts as a **structural entropy floor**
 
----
+
 
 ## Dependencies
 
@@ -159,4 +159,4 @@ Four regimes are explored:
 - NumPy
 - Matplotlib
 
----
+
