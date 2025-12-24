@@ -3,7 +3,7 @@
 This repository is a mathematical model/simulation 
 exploring feedback dynamics between human-generated content 
 and multiple AI models competing on the open internet.
----
+
 
 ## Conceptual Framing
 
