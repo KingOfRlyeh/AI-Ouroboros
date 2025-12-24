@@ -1,4 +1,4 @@
-#AI-Ouroboros
+# AI-Ouroboros
 
 This repository is a mathematical model/simulation 
 exploring feedback dynamics between human-generated content 
