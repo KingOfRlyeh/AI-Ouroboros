@@ -14,7 +14,7 @@ Let:
 - \( H(t) \): cumulative human content
 - \( G(t) \): cumulative AI content
 
-AI systems are retrained periodically on a mixture of human and AI outputs, creating a **closed feedback loop**.
+AI systems are retrained periodically on a mixture of human and AI outputs, creating a closed feedback loop.
 
 
 ## Human Content Model
@@ -29,7 +29,7 @@ h(t) = c\,e^{dt}
 q_i = \frac{1}{i^\alpha} \Big/ \sum_{k=1}^{I} \frac{1}{k^\alpha}
 \]
 
-This distribution remains *structurally stable* over time.
+This distribution remains structurally stable over time.
 
 
 ## AI Content Model
